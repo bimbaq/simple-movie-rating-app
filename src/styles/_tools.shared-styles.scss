@@ -1,0 +1,39 @@
+@mixin link () {
+  border-bottom: 1px dotted currentColor;
+  color: $global-color-primary;
+  outline: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-bottom-style: solid;
+  }
+
+  &:hover {
+    color: scale-color($global-color-primary, $lightness: -10%);
+  }
+}
+
+@mixin deleteButton ($left: false) {
+  $size: 35px;
+
+  align-items: center;
+  background-color: $global-color-primary;
+  border-radius: 50%;
+  color: $white;
+  display: none;
+  font-size: 1.5rem;
+  height: $size;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  right: -#{$size / 2};
+  top: -#{$size / 2};
+  width: $size;
+  z-index: 1;
+
+  @if $left {
+    left: -#{$size / 2};
+    right: auto;
+  }
+}
