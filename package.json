@@ -56,7 +56,7 @@
     "optimize-css-assets-webpack-plugin": "^1.3.2",
     "postcss-loader": "^1.3.3",
     "progress-bar-webpack-plugin": "^1.9.3",
-    "react-dev-utils": "^3.0.0",
+    "react-dev-utils": "^11.0.4",
     "sass-loader": "^6.0.5",
     "shx": "^0.2.2",
     "style-loader": "^0.18.1",
